@@ -1,0 +1,100 @@
+.widget {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.viewAll {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.viewAll:hover {
+  text-decoration: underline;
+}
+
+.tableContainer {
+  flex: 1;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 1rem 1rem 1rem 0;
+  font-size: 0.875rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.secId {
+  color: var(--text-muted);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.name {
+  font-weight: 500;
+  color: var(--text-main);
+  white-space: nowrap;
+}
+
+.statusBadge {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.statusBadge.done {
+  color: #059669;
+}
+
+.statusBadge.notDone {
+  color: #dc2626;
+}
+
+.time {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.showingText {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
