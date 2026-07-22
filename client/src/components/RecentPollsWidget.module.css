@@ -1,0 +1,81 @@
+.widget {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.createBtn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.createBtn:hover {
+  background-color: var(--primary-hover);
+}
+
+.tableContainer {
+  flex: 1;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.table td {
+  padding: 1rem 0;
+  font-size: 0.875rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-main);
+}
+
+.questionCol {
+  font-weight: 500;
+}
+
+.statusBadge {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.statusBadge.live {
+  color: #059669;
+}
+
+.statusBadge.closed {
+  color: var(--text-muted);
+}
+
+.time {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
